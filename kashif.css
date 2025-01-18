@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Accessibility: Focus states */
+a:focus, button:focus {
+    outline: 2px solid #ff0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
