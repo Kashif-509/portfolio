@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with navigation -->
+    <header>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+            <ul id="menu" class="menu" aria-label="Main navigation">
+                <li><a href="#about" aria-label="About Me">About</a></li>
+                <li><a href="#projects" aria-label="My Projects">Projects</a></li>
+                <li><a href="#contact" aria-label="Contact Me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello! I'm a passionate web developer focused on building accessible and responsive websites.</p>
+            <img src="profile.jpg" alt="A photo of the web developer smiling" />
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <img src="project1.jpg" alt="Screenshot of Project 1 website" />
+                <p>This is a description of my first project.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <img src="project2.jpg" alt="Screenshot of Project 2 website" />
+                <p>This is a description of my second project.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
